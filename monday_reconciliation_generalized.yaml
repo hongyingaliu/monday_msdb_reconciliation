@@ -1,0 +1,28 @@
+#Column naming lists and maps
+#mon_columns: column names from monday
+#db_columns: column names fro MS DB
+#column_map: name mapping from DB to Monday
+#reverse_col_map: name mapping from Monday to DB
+#mon_tags: monday API internal ids get from PARAMS = {'query': "{boards (ids: enter id) {columns{title, id, type, settings_str}}}"}
+labels:
+    mon_columns:
+        -example name
+    db_columns:
+        -EXAMPLE_NAME
+    col_map:
+        EXAMPLE_NAME: example name
+    reverse_col_map:
+        example name: EXAMPLE_NAME
+    mon_tags:
+        example0
+# Monday.com API tags
+#  id: MONDAY ID
+#  type: get from PARAMS = {'query': "{boards (ids: enter id) {columns{title, id, type, settings_str}}}"}
+#  map: get from PARAMS = {'query': "{boards (ids: enter id) {columns{title, id, type, settings_str}}}"}
+mon_data:
+    Columns:
+        Example Column Name:
+            id: example0
+            type: # simple or color
+            map: # only if type is not simple
+            	example0: 0
